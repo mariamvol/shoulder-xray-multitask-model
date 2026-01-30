@@ -10,7 +10,7 @@ def _build_model():
 
 def load_model(ckpt_path: str, device: str | None = None):
     device = device or ("cuda" if torch.cuda.is_available() else "cpu")
-    ck = torch.load(ckpt_path, map_location=device)
+    ck = torch.load(ckpt_path, map_location=device, weights_only=False)
 
     model = _build_model().to(device)
     model.load_state_dict(ck["state_dict"])
