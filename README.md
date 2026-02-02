@@ -1,4 +1,11 @@
-# Shoulder fracture classifier
+## Versions
+
+- **v1**: fracture-only inference (`infer_one.py`)
+- **v2**: multi-head inference (`v2/infer_one_v2.py`) — fracture + projection + hardware
+
+---
+
+# v1 - Shoulder fracture classifier
 
 Inference-only deep learning model for shoulder fracture detection on X-ray images.
 
@@ -12,8 +19,6 @@ Training code is intentionally not included.
 - Task: binary classification (fracture / no fracture)
 - Input: RGB X-ray image, resized to 224×224
 - Output: probability of shoulder fracture
-
----
 
 ## Installation
 
