@@ -39,7 +39,7 @@ files.upload()  # upload xray.png
 %cd shoulder-fracture-model
 !pip install -r requirements.txt
 ```
-# download weights (from Releases)
+### download weights (from Releases)
 ```bash
 !wget https://github.com/mariamvol/shoulder-fracture-model/releases/download/v2.0/shoulder_3heads_densenet121_infer.pt
 # upload image (xray.png)
