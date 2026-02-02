@@ -5,7 +5,6 @@ Inference-only deep learning model for shoulder fracture detection on X-ray imag
 This repository provides a ready-to-use interface for model inference.
 Training code is intentionally not included.
 
----
 
 ## Model description
 
@@ -29,7 +28,7 @@ pip install -r requirements.txt
 
 --- 
 
-# v2 — multi-head shoulder X-ray classifier (inference only)
+# v2 — Multi-head shoulder X-ray classifier
 
 Outputs:
 - **Fracture** (0/1)
