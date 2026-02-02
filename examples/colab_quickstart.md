@@ -10,13 +10,13 @@ Open a new Google Colab notebook and run the following cells.
 
 ### 1. Clone repository and install dependencies
 ```python
-!git clone https://github.com/mariamvol/shoulder-fracture-model
-%cd shoulder-fracture-model
+!git clone https://github.com/mariamvol/shoulder-xray-multitask-model
+%cd shoulder-xray-multitask-model
 !pip install -r requirements.txt
 ```
 ### 2. Download model weights
 ```python
-!wget https://github.com/mariamvol/shoulder-fracture-model/releases/download/v1.1/shoulder_fracture_densenet121_infer.pt
+!wget https://github.com/mariamvol/shoulder-xray-multitask-model/releases/download/v1.1/shoulder_fracture_densenet121_infer.pt
 ```
 
 ### 3. Upload an X-ray image
@@ -35,13 +35,13 @@ files.upload()  # upload xray.png
 ## v2 (multi-head)
 
 ```bash
-!git clone https://github.com/<you>/shoulder-fracture-model
-%cd shoulder-fracture-model
+!git clone https://github.com/<you>/shoulder-xray-multitask-model
+%cd shoulder-xray-multitask-model
 !pip install -r requirements.txt
 ```
 ### download weights (from Releases)
 ```bash
-!wget https://github.com/mariamvol/shoulder-fracture-model/releases/download/v2.0/shoulder_3heads_densenet121_infer.pt
+!wget https://github.com/mariamvol/shoulder-xray-multitask-model/releases/download/v2.0/shoulder_3heads_densenet121_infer.pt
 # upload image (xray.png)
 from google.colab import files
 files.upload()
