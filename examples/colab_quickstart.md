@@ -38,13 +38,14 @@ files.upload()  # upload xray.png
 !git clone https://github.com/<you>/shoulder-fracture-model
 %cd shoulder-fracture-model
 !pip install -r requirements.txt
-
+```
 # download weights (from Releases)
-!wget <release_link_to>/shoulder_3heads_densenet121_infer.pt
-
+```bash
+!wget https://github.com/mariamvol/shoulder-fracture-model/releases/download/v2.0/shoulder_3heads_densenet121_infer.pt
 # upload image (xray.png)
 from google.colab import files
 files.upload()
-
+```
+```bash
 !python -m v2.infer_one_v2 --ckpt shoulder_3heads_densenet121_infer.pt --img xray.png
-
+```
